@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <carousel/>
-  </div>
+  <v-app>
+    <v-app-bar flat color='white'>
+      <v-img
+        :src="require('./assets/TUM_logo.png')"
+        contain
+        height="40"
+        />
+    </v-app-bar>
+    <v-main>
+      <v-container>
+        <Carousel/>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import Carousel from './components/Carousel.vue'
+import Carousel from './components/Carousel.vue';
 
 export default {
   name: 'App',
-  components: {
-    Carousel
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {
+    Carousel,
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
