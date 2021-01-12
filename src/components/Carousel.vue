@@ -70,7 +70,8 @@ export default {
           heading: "I'm Jake",
           msg: "",
           color: "blue",
-          src: 'me.jpeg',
+          // src: 'me.jpeg',
+          src: '',
         },
         {
           heading: "",
@@ -100,7 +101,7 @@ export default {
           heading: "My toolset",
           msg: "",
           color: "blue",
-          src: 'logos.png',
+          src: '',
         },
       ],
       display: true,
