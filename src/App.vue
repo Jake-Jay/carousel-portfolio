@@ -7,7 +7,7 @@
         height="40"
         />
     </v-app-bar>
-    <v-main>
+    <v-main style="background-color: black;">
       <v-container >
         <Carousel/>
       </v-container>
