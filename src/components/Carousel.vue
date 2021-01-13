@@ -6,12 +6,11 @@
       v-model="model"
       height="400"
     >
-      <v-carousel-item v-for="(item, i) in items" :key="i">
+      <v-carousel-item v-for="(item, i) in items" :key="i" eager>
         <v-row 
           class="fill-height"
           align="center"
           justify="center"
-          eager
           >
           <v-col align='center' cols="12" sm="4">
             <v-card
