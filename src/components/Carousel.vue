@@ -4,21 +4,23 @@
       hide-delimiters 
       :show-arrows="false" 
       v-model="model"
+      height="400"
     >
       <v-carousel-item v-for="(item, i) in items" :key="i">
         <v-row 
           class="fill-height"
           align="center"
           justify="center"
+          eager
           >
           <v-col align='center' cols="12" sm="4">
             <v-card
               rounded='xl'
               height="300"
               width="300"
-              :color='item.color'
               elevation='5'
-              :src='item.src'
+              @click="model++"
+              :color='item.color'
             >
                 <v-row class="pa-8 fill-height" align="center" justify='center' >
                   <div v-if="item.src !== '' " rounded='circle'>
@@ -27,6 +29,7 @@
                       class="rounded-img mb-2"
                       max-height="200"
                       max-width="200"
+                      eager
                     >
                     </v-img>
                   </div>
@@ -41,7 +44,8 @@
       </v-carousel-item>
     </v-carousel>
     <v-row justify="center">
-      <code @click="model++">Press Enter...</code>
+      <code class="d-none d-md-block">Press Enter...</code>
+      <code class="d-md-none" @click="model++">Tap or Swipe...</code>
     </v-row>
   </div>
 </template>
@@ -69,7 +73,7 @@ export default {
           heading: "I'm Jake",
           msg: "",
           color: "blue",
-          src: 'me.jpeg',
+          src: 'me-compressed.jpeg',
         },
         {
           heading: "",
