@@ -1,24 +1,23 @@
 # carousel-portfolio
 
+My application to [Think Make Start](https://www.tms.tum.de) 2020. 
+
+This was a great oppertunity for me to play around in Vue.js 💻.
+
 ## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Installation
+  ```
+  npm install
+  ```
+- Compiles and hot-reloads for development
+  ```
+  npm run serve
+  ```
+- Compiles and minifies for production
+  ```
+  npm run build
+  ```
+- Lints and fixes files
+  ```
+  npm run lint
+  ```
